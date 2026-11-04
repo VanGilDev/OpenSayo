@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""OpenSayo v1.00 — form system and guarded SayoDevice writer.
+"""OpenSayo v1.01 — form system and guarded SayoDevice writer.
 
 Windows desktop app. Requires Python 3.10+; device programming requires hidapi.
 Writes only the script memory. The official SayoDevice website's Save operation
@@ -19,7 +19,7 @@ from key2_readback_evidence import assess as assess_readback
 from assignment_comparator import report as assignment_report
 from sayo_macro_language import compile_macro as compile_sayo_text, validate_script, script_to_readable
 
-VERSION = "1.00"
+VERSION = "1.01"
 VID, PID = 0x8089, 0x000C
 INTERFACE = 1
 USAGE_PAGE = 0xFF00
@@ -518,7 +518,7 @@ def approved_default_project():
 class App:
     def __init__(self, root):
         self.root=root
-        root.title("OpenSayo v1.00")
+        root.title(f"OpenSayo v{VERSION}")
         root.geometry("1040x850"); root.minsize(850,720)
         self.project=approved_default_project()
         self.field_definitions=copy.deepcopy(self.project["fields"])
@@ -706,7 +706,7 @@ class App:
         menubar.add_cascade(label="Help",menu=helpmenu)
         self.root.config(menu=menubar)
         header=ttk.Frame(self.root,padding=(10,6));header.pack(fill="x")
-        ttk.Label(header,text="OpenSayo v1.00",font=("Segoe UI",18,"bold")).pack(side="left")
+        ttk.Label(header,text=f"OpenSayo v{VERSION}",font=("Segoe UI",18,"bold")).pack(side="left")
         ttk.Label(header,text="Form-linked Macro Viewer",foreground="#23784b").pack(side="left",padx=12)
         self.caps=tk.Label(self.root,text="CHECKING CAPS LOCK…",font=("Segoe UI",12,"bold"),padx=14,pady=9)
         self.caps.pack(fill="x",padx=12,pady=(0,8))
@@ -1974,6 +1974,11 @@ class App:
         ttk.Label(details,text="Compiled by David VanGilder using ChatGPT (GPT-6).",wraplength=440).pack(anchor="w",pady=(4,5))
         ttk.Label(details,text="For suggestions, comments, concerns or anything else please email:",wraplength=510).pack(anchor="w",pady=(5,0))
         self._email_link(details)
+        ttk.Label(details,text="GitHub — Source Code, Updates & Bug Reports",font=("Segoe UI",9,"bold")).pack(anchor="w",pady=(8,1))
+        github_url="https://github.com/VanGilDev/OpenSayo"
+        github_link=ttk.Label(details,text=github_url,foreground="#1269bd",cursor="hand2")
+        github_link.pack(anchor="w",pady=(0,4))
+        github_link.bind("<Button-1>",lambda event:webbrowser.open(github_url,new=2))
         ttk.Label(details,text="Independent Project Notice",font=("Segoe UI",10,"bold","underline")).pack(anchor="w",pady=(7,3))
         ttk.Label(details,text='I am an independent creator who compiled this application to work with programmable keypads and assist in the completion of work forms. I am in no way associated with Quantum or Sayo and cannot provide support for or modifications to their respective systems, software, or hardware. OpenSayo is merely a programmable keypad macro utility intended to help receivers and anyone else who may need to utilize this form.',wraplength=510,justify="left").pack(anchor="w",pady=(0,6))
         ttk.Label(details,text="Copyright © 2026 VanGilDev",wraplength=440).pack(anchor="w",pady=(4,0))

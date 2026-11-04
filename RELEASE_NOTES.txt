@@ -1,3 +1,22 @@
+OpenSayo v1.01 — GitHub About Link Maintenance Release
+
+Changes from v1.00:
+- Added a clickable GitHub repository URL to Help > About OpenSayo:
+  https://github.com/VanGilDev/OpenSayo
+- Link opens in the default browser.
+- Updated application window, header, and About version displays to v1.01.
+- Preserved the About-window mascot, email, notice, license, and Debug checkbox.
+- No intentional changes to USB protocol, macro encoding, or device programming.
+
+Build: Windows with Python 3.12 installed; run BUILD_WINDOWS_EXE.bat.
+Output: dist\OpenSayo\OpenSayo.exe; distribute the whole dist\OpenSayo folder.
+
+Verification performed: Python syntax compile and source-level change checks.
+Still required on Windows before publication: launch app, inspect About layout,
+click GitHub link, test Debug checkbox, and perform basic macro/device regression.
+
+Previous v1.00 release notes follow for reference:
+
 OpenSayo v1.00 — Release Client Build Kit (RC1 code baseline)
 
 This is SOURCE + WINDOWS EXE BUILD SCRIPT, not a prebuilt EXE.
