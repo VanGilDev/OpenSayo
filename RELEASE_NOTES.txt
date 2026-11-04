@@ -1,0 +1,24 @@
+OpenSayo v1.00 — Release Client Build Kit (RC1 code baseline)
+
+This is SOURCE + WINDOWS EXE BUILD SCRIPT, not a prebuilt EXE.
+Build: on Windows with Python 3.12 installed, run BUILD_WINDOWS_EXE.bat.
+Output: dist\OpenSayo\OpenSayo.exe (copy the entire dist\OpenSayo folder).
+Keep a backup of your existing working installation and Documents\OpenSayo session before testing.
+
+Changes integrated:
+- Key 1 and Key 2 flash red on >468 encoded bytes; editing and local project saves remain possible.
+- Guarded hardware script writes reject >468 bytes.
+- Consecutive SLEEP commands combine while preserving total timing (including 16-bit split when necessary).
+- Fourth timing setting: Dropdown opening (ms), default 75, saved with project.
+- Navigation Guard for empty recorded keys; physical assignment UI layout correction.
+- Explore Concepts roadmap updated; v1.00/v1.01 items no longer listed as future releases.
+- Date MM/DD/YY compatibility, Arrival Date Down/Enter, Shinobi icon retained.
+
+Verification: Python syntax, SLEEP encoder checks and Linux virtual-display Tkinter startup/overflow flashing passed.
+Windows EXE packaging and physical keypad tests remain REQUIRED before calling this stable.
+Hardware assignments and write protocols are not changed by this release.
+For further corrections, keep v1.00 version and append hotfix label to kit filename.
+
+Pre-release repair: restored the three RC1 USB protocol capture templates
+and PyInstaller datas mapping. Addresses missing-template errors in physical
+key assignment and macro writing; hardware validation is still required.

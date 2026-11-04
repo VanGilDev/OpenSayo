@@ -1,0 +1,1504 @@
+{
+  "format": "opensayo-v023",
+  "version": 1,
+  "kind": "form_project",
+  "form": {
+    "format": "OpenSayo-Receiving-Inspection",
+    "version": 2,
+    "text_delay_ms": 15,
+    "action_delay_ms": 20,
+    "repeat_gap_ms": 15,
+    "endpoint": 10,
+    "key2_endpoint": 10,
+    "fields": [
+      {
+        "step": 1,
+        "name": "Status",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_001",
+        "format_type": "Drop Down",
+        "format_option": "Status",
+        "dropdown_library_memory": "Status",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 2,
+        "name": "Disposition",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_002",
+        "format_type": "Drop Down",
+        "format_option": "Disposition",
+        "dropdown_library_memory": "Disposition",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 3,
+        "name": "Condition",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_003",
+        "format_type": "Drop Down",
+        "format_option": "Condition",
+        "dropdown_library_memory": "Condition",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 4,
+        "name": "Warehouse",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_004",
+        "format_type": "Drop Down",
+        "format_option": "Warehouse",
+        "dropdown_library_memory": "Warehouse",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 5,
+        "name": "Location",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_005",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 6,
+        "name": "Part Cert #",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_006",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 7,
+        "name": "Tag Type",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_007",
+        "format_type": "Drop Down",
+        "format_option": "Tag Type",
+        "dropdown_library_memory": "Tag Type",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 8,
+        "name": "Tag Date",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_008",
+        "format_type": "Date",
+        "format_option": "MM/DD/YY",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 9,
+        "name": "Qty Packing Slip",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_009",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 10,
+        "name": "Qty Counted",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_010",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 11,
+        "name": "Arrival Date",
+        "value": "",
+        "kind": "navigation",
+        "after": "Down, Enter",
+        "field_id": "quantum_011",
+        "format_type": "Date",
+        "format_option": "Today's Date",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 12,
+        "name": "Mfg Lot #",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_012",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 13,
+        "name": "CFM Code",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_013",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 14,
+        "name": "Traceable To",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_014",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 15,
+        "name": "ILS Flag",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_015",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 16,
+        "name": "Stock Category",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_016",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 17,
+        "name": "SN",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_017",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 18,
+        "name": "Calibration Remarks",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_018",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 19,
+        "name": "Ref Master",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_019",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 20,
+        "name": "Airway Bill",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_020",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 21,
+        "name": "Aircraft",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_021",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 22,
+        "name": "Country",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_022",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 23,
+        "name": "Custom Status",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_023",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 24,
+        "name": "Manufacturer",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_024",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 25,
+        "name": "Quantity",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_025",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 26,
+        "name": "Qty Approved",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_026",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 27,
+        "name": "Exp Date",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_027",
+        "format_type": "Date",
+        "format_option": "MM/DD/YY",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 28,
+        "name": "Insp Date",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_028",
+        "format_type": "Date",
+        "format_option": "MM/DD/YY",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 29,
+        "name": "Calib Remarks",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_029",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 30,
+        "name": "Calib Ref Master",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_030",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 31,
+        "name": "Calib Ref Instr",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_031",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 32,
+        "name": "Remarks",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_032",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 33,
+        "name": "Repair Note",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_033",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 34,
+        "name": "Ref Instructions",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_034",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 35,
+        "name": "Miscellaneous",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_035",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 36,
+        "name": "RFID Tag",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_036",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 37,
+        "name": "PPT ID #",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_037",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 38,
+        "name": "Qty Rejected",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_038",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 39,
+        "name": "Stocking Part #",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_039",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 40,
+        "name": "Shipper's Invoice #",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_040",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 41,
+        "name": "Unit Freight Cost",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_041",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 42,
+        "name": "Qty Variance",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_042",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 43,
+        "name": "Amount Variance",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_043",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 44,
+        "name": "Mfg Date",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_044",
+        "format_type": "Date",
+        "format_option": "MM/DD/YY",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 45,
+        "name": "Stock 021",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_045",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 46,
+        "name": "Stock 022",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_046",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 47,
+        "name": "Qty Original",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_047",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 48,
+        "name": "UDN #1",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_048",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 49,
+        "name": "UDN #2",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_049",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 50,
+        "name": "UDN #3",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_050",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 51,
+        "name": "UDN #4",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_051",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 52,
+        "name": "UDN #5",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_052",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 53,
+        "name": "UDN #6",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_053",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 54,
+        "name": "UDN #7",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_054",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 55,
+        "name": "UDN #8",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_055",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 56,
+        "name": "UDN #9",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_056",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 57,
+        "name": "UDN #10",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_057",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 58,
+        "name": "Unit Cost",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_058",
+        "format_type": "Skip",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 59,
+        "name": "Documents",
+        "value": "",
+        "kind": "navigation",
+        "after": "Tab",
+        "field_id": "quantum_059",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 60,
+        "name": "End Item",
+        "value": "",
+        "kind": "manual",
+        "after": "Tab",
+        "field_id": "quantum_060",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 61,
+        "name": "EASA",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_061",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 62,
+        "name": "FAA",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_062",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 63,
+        "name": "CAAC",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_063",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 64,
+        "name": "TC",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_064",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 65,
+        "name": "OTHER",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_065",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 66,
+        "name": "Contract #",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_066",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 67,
+        "name": "Capability",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_067",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 68,
+        "name": "Department",
+        "value": "",
+        "kind": "text",
+        "after": "Tab",
+        "field_id": "quantum_068",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      },
+      {
+        "step": 69,
+        "name": "Certified By",
+        "value": "",
+        "kind": "navigation",
+        "after": "Tab",
+        "field_id": "quantum_069",
+        "format_type": "Text",
+        "format_option": "",
+        "dropdown_library_memory": "",
+        "navigate": false,
+        "navigate_keys": ""
+      }
+    ],
+    "dropdowns": {
+      "Status": [
+        "Approved",
+        "CFM Reject",
+        "Open",
+        "Quarantine",
+        "Rejected"
+      ],
+      "Disposition": [
+        "AWAIT CERT",
+        "INSP",
+        "N/A",
+        "QUAR",
+        "REJ RET",
+        "REJ SCRAP",
+        "STK"
+      ],
+      "Condition": [
+        "NE",
+        "RP",
+        "INSP",
+        "MOD",
+        "RPBL",
+        "BT",
+        "REFURB",
+        "FN",
+        "NS",
+        "OH",
+        "SV",
+        "AR",
+        "REJ",
+        "QAR"
+      ],
+      "Warehouse": [
+        "FUEL",
+        "CFM",
+        "DOVE",
+        "BKS",
+        "CONV-1",
+        "CONV-G",
+        "NDT"
+      ],
+      "Tag Type": [
+        "SV TAG",
+        "MAT Cert",
+        "COC",
+        "CAAS (AW) 95",
+        "CAA FORM 1",
+        "FORM ONE",
+        "FORM 1",
+        "F-100-01",
+        "8130",
+        "TCCA 24-0078",
+        "JAA FORM ONE",
+        "CAL CERT"
+      ]
+    },
+    "dynamic_form": true,
+    "layout": {
+      "columns": 5,
+      "rows": 25,
+      "positions": {
+        "0": [
+          0,
+          3
+        ],
+        "1": [
+          0,
+          4
+        ],
+        "2": [
+          0,
+          5
+        ],
+        "3": [
+          0,
+          6
+        ],
+        "4": [
+          0,
+          7
+        ],
+        "5": [
+          1,
+          7
+        ],
+        "6": [
+          1,
+          9
+        ],
+        "7": [
+          1,
+          10
+        ],
+        "8": [
+          3,
+          9
+        ],
+        "9": [
+          3,
+          10
+        ],
+        "10": [
+          3,
+          15
+        ],
+        "11": [
+          0,
+          19
+        ],
+        "12": [
+          0,
+          8
+        ],
+        "13": [
+          0,
+          9
+        ],
+        "14": [
+          0,
+          10
+        ],
+        "15": [
+          0,
+          11
+        ],
+        "16": [
+          0,
+          15
+        ],
+        "17": [
+          0,
+          16
+        ],
+        "18": [
+          0,
+          17
+        ],
+        "19": [
+          0,
+          18
+        ],
+        "20": [
+          0,
+          20
+        ],
+        "21": [
+          0,
+          21
+        ],
+        "22": [
+          0,
+          22
+        ],
+        "23": [
+          0,
+          23
+        ],
+        "24": [
+          1,
+          4
+        ],
+        "25": [
+          1,
+          5
+        ],
+        "26": [
+          1,
+          11
+        ],
+        "27": [
+          1,
+          12
+        ],
+        "28": [
+          1,
+          13
+        ],
+        "29": [
+          1,
+          14
+        ],
+        "30": [
+          1,
+          15
+        ],
+        "31": [
+          1,
+          16
+        ],
+        "32": [
+          1,
+          18
+        ],
+        "33": [
+          1,
+          20
+        ],
+        "34": [
+          1,
+          21
+        ],
+        "35": [
+          1,
+          22
+        ],
+        "36": [
+          1,
+          23
+        ],
+        "37": [
+          2,
+          5
+        ],
+        "38": [
+          0,
+          1
+        ],
+        "39": [
+          3,
+          7
+        ],
+        "40": [
+          3,
+          8
+        ],
+        "41": [
+          3,
+          11
+        ],
+        "42": [
+          3,
+          12
+        ],
+        "43": [
+          3,
+          13
+        ],
+        "44": [
+          3,
+          22
+        ],
+        "45": [
+          3,
+          23
+        ],
+        "46": [
+          3,
+          14
+        ],
+        "47": [
+          4,
+          0
+        ],
+        "48": [
+          4,
+          0
+        ],
+        "49": [
+          4,
+          1
+        ],
+        "50": [
+          4,
+          1
+        ],
+        "51": [
+          4,
+          2
+        ],
+        "52": [
+          4,
+          2
+        ],
+        "53": [
+          4,
+          3
+        ],
+        "54": [
+          4,
+          3
+        ],
+        "55": [
+          4,
+          4
+        ],
+        "56": [
+          4,
+          4
+        ],
+        "57": [
+          3,
+          16
+        ],
+        "58": [
+          4,
+          22
+        ],
+        "59": [
+          3,
+          20
+        ],
+        "60": [
+          4,
+          11
+        ],
+        "61": [
+          4,
+          12
+        ],
+        "62": [
+          4,
+          13
+        ],
+        "63": [
+          4,
+          14
+        ],
+        "64": [
+          4,
+          15
+        ],
+        "65": [
+          3,
+          6
+        ],
+        "66": [
+          3,
+          4
+        ],
+        "67": [
+          3,
+          5
+        ],
+        "68": [
+          1,
+          8
+        ]
+      },
+      "allow_unplaced": true,
+      "half_fields": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "half_slots": {
+        "47": 0,
+        "48": 1,
+        "49": 0,
+        "50": 1,
+        "51": 0,
+        "52": 1,
+        "53": 0,
+        "54": 1,
+        "55": 0,
+        "56": 1
+      },
+      "labels": [
+        {
+          "id": "quantum_label_initial_alt_part__",
+          "name": "Initial/Alt Part #",
+          "position": [
+            0,
+            0
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_instructions",
+          "name": "Instructions",
+          "position": [
+            0,
+            2
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_description",
+          "name": "Description",
+          "position": [
+            2,
+            0
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_uom_code",
+          "name": "UOM Code",
+          "position": [
+            2,
+            2
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_conv_stock_qty",
+          "name": "Conv Stock Qty",
+          "position": [
+            2,
+            3
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_max_qty",
+          "name": "Max Qty",
+          "position": [
+            2,
+            4
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_serialized",
+          "name": "Serialized",
+          "position": [
+            3,
+            0
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_hologram",
+          "name": "Hologram",
+          "position": [
+            3,
+            1
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_force_split",
+          "name": "Force Split",
+          "position": [
+            3,
+            2
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_visible_to_stock_market",
+          "name": "Visible to Stock Market",
+          "position": [
+            3,
+            3
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_item__",
+          "name": "Item #",
+          "position": [
+            1,
+            3
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_qty_appr_hist",
+          "name": "Qty Appr Hist",
+          "position": [
+            1,
+            6
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_qty_rej_hist",
+          "name": "Qty Rej Hist",
+          "position": [
+            2,
+            6
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_ctrl__",
+          "name": "Ctrl #",
+          "position": [
+            2,
+            7
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_ctrl_id",
+          "name": "Ctrl Id",
+          "position": [
+            2,
+            8
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_series__",
+          "name": "Series #",
+          "position": [
+            2,
+            9
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_series_id",
+          "name": "Series Id",
+          "position": [
+            2,
+            10
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_cert_freq",
+          "name": "Cert Freq  [M]",
+          "position": [
+            2,
+            11
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_uom_description",
+          "name": "UOM Description",
+          "position": [
+            2,
+            1
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_stock_020",
+          "name": "Stock 020",
+          "position": [
+            3,
+            19
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_part_group",
+          "name": "Part Group",
+          "position": [
+            0,
+            12
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_company",
+          "name": "Company",
+          "position": [
+            0,
+            13
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_entry_date",
+          "name": "Entry Date",
+          "position": [
+            0,
+            14
+          ],
+          "side": 0
+        },
+        {
+          "id": "quantum_label_dfar_flag",
+          "name": "DFAR Flag",
+          "position": [
+            3,
+            3
+          ],
+          "side": 1
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "1": "EXIT",
+    "2": "EXIT"
+  },
+  "key1_bank": "7",
+  "key2_bank": "8",
+  "physical_key1": "7",
+  "physical_key2": "8"
+}

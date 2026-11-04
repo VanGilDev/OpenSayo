@@ -1,0 +1,16 @@
+OpenSayo v1.00 — pre-release USB regression correction
+
+Cause: release removed py/captures and removed their PyInstaller datas entry.
+The application still needs these verified capture-derived packet templates.
+
+Before using hardware:
+1. Build with BUILD_WINDOWS_EXE.bat on Windows 10.
+2. Confirm dist\OpenSayo\_internal\captures contains all three .pcapng files.
+3. Keep a backup of device scripts and original assignments.
+4. Test Apply Key Assignments (Key 1/2 swap) and verify physically.
+5. Unplug/reconnect and verify assignments persist.
+6. Test Save to Device with a short, non-sensitive macro, then read back.
+7. Do not treat a sent-packet confirmation as verified persistence.
+8. If assignment dialog reports failure but mapping changes, record exact error.
+
+No Windows hardware test performed by this package's author.

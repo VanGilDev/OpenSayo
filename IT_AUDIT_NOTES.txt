@@ -1,0 +1,9 @@
+Source-review kit. No device captures, logs, sessions or debug data included. See code and OpenSayo.spec. Windows build has not been validated in this environment.
+
+Pre-release correction: the three original Alpha20 .pcapng captures are REQUIRED
+protocol templates used by hardware_protocol.py for device writes and assignments.
+They are packaged in the frozen executable under _internal/captures/.
+These are development-origin packet captures: IT must review their contents
+for privacy/security and approve inclusion before workplace deployment.
+No synthetic USB packets/templates were substituted.
+Hardware operation and persistence remain unverified on this build.
