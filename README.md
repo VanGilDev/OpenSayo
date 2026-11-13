@@ -1,52 +1,188 @@
-# OpenSayo v1.15
+<p align="center">
+  <img src="OpenSayo_Banner.jpg" alt="OpenSayo — Offline Programmable Keypad Macro Editor" width="100%">
+</p>
 
-![OpenSayo banner](OpenSayo/assets/OpenSayo_Banner.jpg)
+<h1 align="center">OpenSayo — Offline Programmable Keypad Macro Editor</h1>
 
-## Application preview
+<p align="center">
+  Free • Open Source • Offline • Windows
+</p>
 
-![OpenSayo application, Form View, and About window](OpenSayo/assets/OpenSayo_Layered_Preview.png)
+## Application Preview
 
-*Fictional equipment service request demonstration. Variable details remain label-only.*
+<p align="center">
+  <img src="OpenSayo_Layered_Preview.png" alt="OpenSayo macro editor, form preview, and About window" width="100%">
+</p>
 
+---
 
-**OpenSayo v1.15** is an app-wide polish release intended to make OpenSayo more approachable and useful for general users. It is a Windows tool for creating, editing, previewing, and programming macros for supported Sayo keypads.
+## About OpenSayo
 
-## What's included
+**OpenSayo** is a free, open-source Windows application designed to create, edit, organize, preview, and program keyboard macros for compatible Sayo programmable keypads.
 
-- `OpenSayo/`: complete application source, Windows launch/build scripts, license, support files, sanitised Sayo USB protocol templates, and offline tests.
-- `IT_Review/`: software overview, build and security review, test status, complete window/dialog inventory, staged verification checklist, and source SHA-256 hashes.
+Developed as an alternative to browser-based programming tools, OpenSayo provides a dedicated desktop environment for configuring programmable keypads without requiring an active internet connection.
 
-**Source package:** This repository does not contain a prebuilt Windows `.exe`. On Windows, `OpenSayo/BUILD_WINDOWS_EXE.bat` produces the complete `dist\OpenSayo\` runtime folder; `PACKAGE_IT_REVIEW_WINDOWS.bat` can then produce a ZIP including the compiled runtime and IT materials. Review hardware access and privacy requirements before workplace deployment.
+The goal is simple: **make programmable keypad macros easier to create, understand, modify, and deploy while keeping the software transparent, portable, and accessible.**
 
-## Run on Windows
+## What OpenSayo Does
 
-1. Extract the entire ZIP; never run the `.bat` files directly from inside the archive.
-2. If Python 3.12 is already available, open `OpenSayo/` and double-click `RUN_OPENSAYO.bat`.
-3. To create a standalone executable, double-click `OpenSayo/BUILD_WINDOWS_EXE.bat`. Keep **all files in** `OpenSayo/dist/OpenSayo/` together; launch `OpenSayo.exe` from that folder.
-4. To stage an executable-and-source IT review release archive after building, double-click `PACKAGE_IT_REVIEW_WINDOWS.bat` in the ZIP root.
-5. Review tests are delivered in small interactive chat checklists; the complete IT plan is in `IT_Review/MASTER_VERIFICATION_CHECKLIST.md`. Do not connect or program a device until the later hardware test phase.
+OpenSayo allows users to configure programmable keypad buttons to execute predefined sequences of keyboard actions.
 
-## Configuration
+These sequences can include typed text, keyboard shortcuts, navigation commands, and timed delays. Instead of manually repeating the same keyboard operations, users can program their keypad to perform those actions with a single button press.
 
-A fresh startup has 25 blank generic fields and a three-column grid. Field count grows with imported definitions. Personal field (`.osfld`), grid (`.oslay`) and dropdown (`.osdrp`) files are loaded **locally** in that order. None of those private files are included in this package. Only **Field View** has a field enable/disable control: uncheck a field's **Use** checkbox to make it label-only. Disabled fields appear as labels in Form View and retain their Tab navigation position. Grid Mode arranges the visual layout.
+Once a compatible keypad has been successfully programmed, its stored macros can operate independently of OpenSayo. This allows users to configure their hardware on one computer and use it on another without installing OpenSayo on the destination system.
 
-## Device script readback
+## Main Features
 
-On either supported keypad layout, choose the intended key or script slot before loading. A successful read should populate both the editable Field View and the raw Macro Viewer, including supported navigation actions. Original readback timing stays intact until you edit the form; recheck the regenerated macro and byte meter before programming. Unsupported scripts must leave your current editor intact. Recording keys shows the captured keystrokes in the recorder's text area while recording, but only while its own capture box is focused. All physical device writes must be separately confirmed and verified on Windows.
+### Visual, Form-Based Macro Editing
 
-## Public demonstration
+OpenSayo includes a form-linked macro editor that organizes keyboard actions into individual fields.
 
-`OpenSayo/assets/OpenSayo_Generic_Form_Demo.png` is a **synthetic test configuration** shown in the actual application; it is not a screenshot of any external business system or real user information. Varying item details (reference, part/serial number, quantity) are intentionally label-only.
+Rather than requiring users to work exclusively with raw keyboard commands, the application presents editable values and configurable actions in a structured interface.
 
-## Safety and support
+Users can configure:
 
-Use only harmless test records when reviewing macros. IT should approve HID access, dependencies, and any device writes before deployment. The build script currently installs Python packages from PyPI; local IT may need to review and pin those packages. The binary build and physical device validation must be completed on Windows before a production release is considered verified.
+- **Flexible Field Input & Configuration** — Customize text entries, dropdown definitions, date fields, and other field-specific actions.
+- **Skippable Fields** — Use the **Use** checkbox in Field View to make a field label-only while preserving its saved value, settings, and Tab navigation.
+- **Keyboard Navigation** — Configure navigation commands and movement between fields.
+- **Macro Endpoints & Execution Order** — Control where each macro ends and how its actions execute.
+- **Customizable Form View & Grid Mode** — Organize and preview fields for different workflows, with layouts that can be saved and loaded.
+- **Reusable Definitions** — Load your own field, dropdown, and view-layout definitions without including personal configurations in the public installation.
 
-**GitHub:** https://github.com/VanGilDev/OpenSayo
+This approach is particularly useful for repetitive data-entry workflows involving multiple fields, allowing users to build macros while maintaining a clear visual representation of their workflow.
 
-### v1.15 final Windows reviewer checkpoint
+### Macro Viewer and Editing
 
-Verify Field View Use toggles correctly and restores the field's saved value.
-Disabled fields appear as labels in Form View and retain their macro Tab
-positions. Check that Field View Use controls the field state, and that layout
-editing and physical device behavior still work normally.
+OpenSayo also provides a macro viewer for examining the underlying keyboard instructions.
+
+This allows users to inspect and adjust macro sequences, including typed text, navigation keys, and timing operations. Freeform editing and recording tools provide additional flexibility when a workflow does not fit a structured form.
+
+The combination of structured field editing and direct macro inspection gives users greater control over their programmed actions.
+
+### Programmable Keypad Management
+
+OpenSayo supports macro configuration for compatible two-key and eight-key Sayo keypads.
+
+Users can:
+
+- Configure separate macros for supported physical buttons.
+- Select the script assigned to each physical button.
+- Read supported script data from a connected device.
+- Write edited scripts to the device.
+- Review and apply physical key assignments.
+
+Device configuration tools are integrated into the application. Hardware compatibility depends on the specific model and its supported protocol.
+
+### Macro Size Monitoring
+
+Programmable keypads have limited onboard storage.
+
+OpenSayo provides macro-size information to help users identify scripts that exceed the capacity of their selected supported device before writing them to hardware.
+
+### Form Preview
+
+OpenSayo includes a separate Form View that visually represents the fields associated with a macro.
+
+Users can organize fields and load saved layouts to suit different workflows. Grid Mode offers another way to review and work with fields.
+
+This provides a visual reference for understanding how the programmed keyboard sequence corresponds to a larger data-entry form.
+
+### Save, Load, and Reuse Projects
+
+Users can save their macro configurations as OpenSayo project files (`.osayo`) and reload them for future editing.
+
+The application supports local field definitions, dropdown definitions, and view layouts, so users can restore their own configurations after installing a clean public release.
+
+This makes it possible to maintain multiple macro configurations without rebuilding them from scratch.
+
+### Offline Operation
+
+OpenSayo is designed to run locally on Windows.
+
+An internet connection is not required for normal macro editing or supported device programming.
+
+The application does not depend on a manufacturer's website to perform its supported programming operations.
+
+### Open Source and IT Review
+
+OpenSayo is distributed under the MIT License.
+
+Source code and supporting build documentation are available for inspection, modification, and independent compilation.
+
+This is particularly useful in environments where software must be reviewed before installation or use.
+
+OpenSayo is an independently developed community project and is not officially affiliated with or endorsed by the creators or manufacturers of compatible devices or other systems.
+
+---
+
+## Supported Hardware
+
+OpenSayo has been developed and tested with supported two-key and eight-key Sayo programmable USB keypads.
+
+Compatibility is model-specific. Other devices may require additional protocol testing before they can be supported reliably.
+
+If you would like support for another device, feel free to submit a feature request through GitHub Issues. Hardware contributions and sponsorships may help fund future device testing, but compatibility with any particular device cannot be guaranteed.
+
+---
+
+## Typical Uses
+
+OpenSayo may be useful for:
+
+- Repetitive data-entry tasks.
+- Multi-field form completion.
+- Frequently used text sequences.
+- Keyboard navigation automation.
+- Application-specific keyboard shortcuts.
+- Workflows requiring consistent, repeatable keystroke sequences.
+
+Users should review generated macros and confirm their behavior before relying on them in important workflows.
+
+## Downloads and Installation
+
+Download the latest packaged Windows release from:
+
+**[OpenSayo Releases](https://github.com/VanGilDev/OpenSayo/releases)**
+
+The release packages include:
+
+- **Windows x64 Package** — Packaged application for Windows users.
+- **Source & IT Package** — Source code and supporting materials for inspection and independent compilation.
+
+Extract the Windows package and launch `OpenSayo.exe` from its extracted application folder.
+
+For source compilation, review the included build instructions and supporting documentation. To restore your own setup, load your personal field, dropdown, and view-layout definitions after installation.
+
+## Source Code, Bug Reports, and Suggestions
+
+**GitHub Repository:**  
+https://github.com/VanGilDev/OpenSayo
+
+**Releases:**  
+https://github.com/VanGilDev/OpenSayo/releases
+
+**Bug Reports and Feature Requests:**  
+https://github.com/VanGilDev/OpenSayo/issues
+
+**Community Discussions:**  
+https://github.com/VanGilDev/OpenSayo/discussions
+
+Feedback, suggestions, bug reports, and contributions are welcome.
+
+When reporting an issue, please include the OpenSayo version, Windows version, keypad model, and steps needed to reproduce the problem.
+
+Do not include passwords, confidential information, or sensitive macro contents in public reports.
+
+## License
+
+OpenSayo is released under the **MIT License**.
+
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+  <strong>OpenSayo — Program your keypad, not your patience.</strong> 🐾
+</p>
+
+*OpenSayo is an independent project and is not affiliated with or endorsed by the manufacturers of compatible devices.*
