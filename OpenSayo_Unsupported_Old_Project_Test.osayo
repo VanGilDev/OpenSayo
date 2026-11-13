@@ -1,0 +1,422 @@
+{
+  "format": "OpenSayo-OldProject",
+  "version": 0,
+  "description": "Synthetic unsupported format for testing a friendly import error. Contains no private data.",
+  "dynamic_form": false,
+  "fields": [
+    {
+      "step": 1,
+      "name": "Sample Field 01",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 2,
+      "name": "Sample Field 02",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 3,
+      "name": "Sample Field 03",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 4,
+      "name": "Sample Field 04",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 5,
+      "name": "Sample Field 05",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 6,
+      "name": "Sample Field 06",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 7,
+      "name": "Sample Field 07",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 8,
+      "name": "Sample Field 08",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 9,
+      "name": "Sample Field 09",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 10,
+      "name": "Sample Field 10",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 11,
+      "name": "Sample Field 11",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 12,
+      "name": "Sample Field 12",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 13,
+      "name": "Sample Field 13",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 14,
+      "name": "Sample Field 14",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 15,
+      "name": "Sample Field 15",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 16,
+      "name": "Sample Field 16",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 17,
+      "name": "Sample Field 17",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 18,
+      "name": "Sample Field 18",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 19,
+      "name": "Sample Field 19",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 20,
+      "name": "Sample Field 20",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 21,
+      "name": "Sample Field 21",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 22,
+      "name": "Sample Field 22",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 23,
+      "name": "Sample Field 23",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 24,
+      "name": "Sample Field 24",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 25,
+      "name": "Sample Field 25",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 26,
+      "name": "Sample Field 26",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 27,
+      "name": "Sample Field 27",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 28,
+      "name": "Sample Field 28",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 29,
+      "name": "Sample Field 29",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 30,
+      "name": "Sample Field 30",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 31,
+      "name": "Sample Field 31",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 32,
+      "name": "Sample Field 32",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 33,
+      "name": "Sample Field 33",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 34,
+      "name": "Sample Field 34",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 35,
+      "name": "Sample Field 35",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 36,
+      "name": "Sample Field 36",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 37,
+      "name": "Sample Field 37",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 38,
+      "name": "Sample Field 38",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 39,
+      "name": "Sample Field 39",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 40,
+      "name": "Sample Field 40",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 41,
+      "name": "Sample Field 41",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 42,
+      "name": "Sample Field 42",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 43,
+      "name": "Sample Field 43",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 44,
+      "name": "Sample Field 44",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 45,
+      "name": "Sample Field 45",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 46,
+      "name": "Sample Field 46",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 47,
+      "name": "Sample Field 47",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 48,
+      "name": "Sample Field 48",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 49,
+      "name": "Sample Field 49",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 50,
+      "name": "Sample Field 50",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 51,
+      "name": "Sample Field 51",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 52,
+      "name": "Sample Field 52",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 53,
+      "name": "Sample Field 53",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 54,
+      "name": "Sample Field 54",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 55,
+      "name": "Sample Field 55",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 56,
+      "name": "Sample Field 56",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 57,
+      "name": "Sample Field 57",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 58,
+      "name": "Sample Field 58",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 59,
+      "name": "Sample Field 59",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 60,
+      "name": "Sample Field 60",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 61,
+      "name": "Sample Field 61",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 62,
+      "name": "Sample Field 62",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 63,
+      "name": "Sample Field 63",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 64,
+      "name": "Sample Field 64",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 65,
+      "name": "Sample Field 65",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 66,
+      "name": "Sample Field 66",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 67,
+      "name": "Sample Field 67",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 68,
+      "name": "Sample Field 68",
+      "value": "",
+      "format_type": "Text"
+    },
+    {
+      "step": 69,
+      "name": "Sample Field 69",
+      "value": "",
+      "format_type": "Text"
+    }
+  ]
+}

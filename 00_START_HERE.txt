@@ -1,0 +1,15 @@
+OpenSayo v1.15 — IT Review
+
+Product: independently developed Windows keypad macro editor.
+Release theme: app-wide polish and improved accessibility for general users.
+This folder is the full technical/QA review documentation for the source kit.
+Source: ../OpenSayo/py/
+Build: ../OpenSayo/BUILD_WINDOWS_EXE.bat (Python 3.12 on Windows)
+Optional executable/IT kit staging: ../PACKAGE_IT_REVIEW_WINDOWS.bat
+Results: 04_REGRESSION_RESULTS.txt; full checks: MASTER_VERIFICATION_CHECKLIST.md
+Small test batches: interactive chat checklists; full master plan: MASTER_VERIFICATION_CHECKLIST.md
+Popup inventory: WINDOW_AND_DIALOG_INVENTORY.md
+Integrity: 06_SOURCE_SHA256.txt
+
+Only generic default forms are bundled. No personal field, grid or dropdown definitions are included.
+The source kit does not contain a precompiled Windows executable. User-reported Windows and hardware testing exists for earlier candidates, but a freshly built executable, this exact candidate, the full popup inventory, and final disclosure checks still require approval.

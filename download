@@ -1,0 +1,17 @@
+# Local build artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+*.spec.bak
+# Local user configuration, macros and device backups; do not publish accidentally
+*.osayo
+*.osfrm
+*.osfld
+*.oslay
+*.osdrp
+last_session.json
+ui_preferences.json
+key_assignment_preferences.json

@@ -1,0 +1,17 @@
+OpenSayo v1.15 — App-wide polish and general-user accessibility
+
+- Generic 25-field starter form, with expandable and configurable fields.
+- Personal form fields, layouts and dropdowns can be imported locally.
+- Field View-only Use checkboxes enable or disable fields; disabled fields remain label-only and preserve Tab alignment.
+- Expanded searchable Help and clearer unsupported-project warnings.
+- Shared timing controls in Macro Viewer and Freeform; Settings reset uses 15/20/15 ms defaults.
+- Form View, Grid Mode, Freeform, local recording, and two-/eight-key script handling.
+- Source package uses minimized Sayo-only USB command templates.
+- Additional guards prevent duplicate Help, About, Settings, Form Preview, Grid Mode, Manage Fields, Recorder, Navigate Keys and 8-Key Management windows.
+- Device-script readback now restores supported navigation and text actions into editable Form View instead of leaving an unrelated form; the original encoded script is retained until the form is edited.
+- Script preview and byte meter now track the same source after a two-key or eight-key read, edit, and project reload.
+- Readback that cannot fit the selected form is rejected without altering the existing fields or script; no automatic hardware write is performed.
+- The local Macro Recorder displays each captured key or navigation action in its capture area as recording happens.
+- Field View provides a simple Use checkbox for turning fields into label-only placeholders while preserving their Tab position.
+
+Windows executable build, hardware persistence testing and final disclosure checks must be completed before public deployment. No private field/layout/dropdown configurations ship with the source.

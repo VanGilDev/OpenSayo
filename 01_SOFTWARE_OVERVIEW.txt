@@ -1,0 +1,9 @@
+OpenSayo v1.15 — software overview
+Windows desktop application for editing and programming supported Sayo 2-key and 8-key macro keypads.
+The 8-key interface supports script slots 0–63. Form View, Macro Viewer and Freeform
+provide editing and inspection of macros. Device Load reads a script; Device Save
+writes a script following application confirmation. Shareable JSON reference definitions
+can be imported/exported and restored to built-in Sayo defaults; these profiles are
+not generic replacement device drivers.
+The application also provides Caps Lock warnings and a macro capacity indicator.
+Review the actual source to determine the precise permissions and behavior.

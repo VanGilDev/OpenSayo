@@ -1,0 +1,17 @@
+OpenSayo v1.15 — USB and security review points
+- Uses Python hidapi to communicate with supported USB HID macro keypads.
+- Load Focused Key reads device macro data; Save Focused Key programs selected script.
+- Some device operations may alter persistent device configuration; obtain approval first.
+- USB response handling includes checksum and script/offset validation, with filters for unrelated HID status packets during readback.
+- Three MINIMAL Sayo-only .pcapng protocol templates are included in
+  OpenSayo/py/captures/ and used by hardware_protocol.py. The originals
+  captured unrelated USB devices and host metadata; they are backed up PRIVATE
+  outside this working source. Only the 443 matching Sayo command reports remain.
+  Offline command-byte equivalence passed; physical device testing and final
+  packaged-asset inspection remain required before approval.
+- The public build contains no bundled custom form preset; startup fields are
+  generic and user-supplied definitions, layouts, and dropdowns can be imported.
+- Autosave/project data may be written to the user's Documents/OpenSayo directory.
+- JSON definitions are reference profiles, not automatically executable device drivers.
+- IT should audit USB VID/PID targeting, write safeguards, package dependencies,
+  local file access, and any external communications directly from the code.

@@ -1,0 +1,6 @@
+OpenSayo v1.15 — USB protocol-template assessment
+
+Only the minimized Sayo protocol templates are included under py/captures/.
+The original full-bus captures are held separately and are not part of this distribution.
+Offline checks compared 443 selected HID command reports byte-for-byte and 15 sample write/assignment outputs. Full physical device read/write and persistence tests are still required.
+IT should inspect HID targeting, command guards, dependencies and distributed executable contents before approval.

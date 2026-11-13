@@ -1,0 +1,61 @@
+OPEN SAYO — RESTORING YOUR OWN CONFIGURATION AFTER INSTALLATION
+
+This public release starts with an unconfigured 25-field, 3-column Form View (10 generic labels, then 11–25).
+The first ten are familiar, neutral form labels; fields 11–25 are numbered.
+No private field definitions, dropdown libraries, or special actions are bundled.
+The field labelled Date is an ordinary Text field until you configure it. The full editors, dropdown library workspace, form designer, and
+physical-device functions remain present.
+
+OPTION A — ONE SAVED COMPLETE PROJECT (.osayo)
+1. Select File > Open Project.
+2. Pick your own previously saved .osayo file.
+3. Your saved form, field definitions, values, layout and scripts are restored.
+   Check the target device/assignment before programming hardware.
+
+OPTION B — ONE SAVED FORM FORMAT (.osfrm)
+1. Open or create a Form Project.
+2. Select File > Load Form Format.
+3. Choose your .osfrm file. This restores field definitions, field formats,
+   dropdown libraries, field values, endpoints, and saved grid positions.
+
+OPTION C — INDIVIDUAL CONFIGURATION FILES
+1. Open the About window and enable Show Debug tab for advanced settings.
+2. Import field definitions using File > Load Field List (.osfld).
+3. Import the visual layout using File > Load Form Layout (.oslay).
+4. If separately exported, import dropdown libraries from Debug > Dropdowns
+   (.osdrp). Some field-list files also carry their dropdown libraries.
+5. Load any separate JSON Sayo reference definitions using Debug > Definitions.
+6. Open Form View and confirm the restored field positions and actions.
+
+IMPORTANT
+- Field List must load before Layout when the field IDs differ from startup.
+- Save a complete .osayo or .osfrm file to make restoration easiest next time.
+- The generic defaults and restoration process do not program any USB device.
+- A previously autosaved session may appear instead of the generic defaults
+  on machines where OpenSayo was used before. Reset Defaults restores the
+  generic form, so back up your private file before resetting.
+- Always verify your actual dropdown, date, and key assignments after import.
+
+V1.15 FIELD COUNT
+- The 25 generic fields are the initial template, not a maximum.
+- Manage Fields > Add Field creates more fields. The grid can add rows as needed.
+- Saved definitions containing 69 or more fields replace and expand the blank
+  startup list automatically, without manually creating fields 26 onward.
+
+V1.15 OPTIONAL FIELD ENABLE / DISABLE
+- Only Field View controls field enable/disable. Each field has a Use checkbox:
+  checked = active; unchecked = label-only. Click it normally; no Alt is needed.
+- A disabled field appears as only its label in Form View, without an
+  editable text box, dropdown, or date control.
+- Grid Mode arranges the layout, including purely visual labels.
+- Manage Fields edits names, formats and layout settings, but not Use state.
+  Return to Field View to enable or disable an existing field.
+- Disabled fields send no text or configured date/dropdown action, but keep
+  their field ID, grid cell, saved value, and macro Tab position. Recheck Use
+  to restore the input with its prior value and configuration.
+- Add Label Only in Grid Mode is different: it creates a visual caption and
+  does not create an extra Tab step in the generated macro.
+- Existing .osfld/.osfrm/.osayo without an Enabled property load as active.
+- Newly saved field definitions remember the enabled state. .oslay holds
+  layout data only and .osdrp holds dropdown libraries only.
+- Keep your personal definitions private; do not upload them to public source.

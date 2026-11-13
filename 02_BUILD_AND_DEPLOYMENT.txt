@@ -1,0 +1,10 @@
+OpenSayo v1.15 — Build and deployment
+
+Source: OpenSayo/py/ and OpenSayo/OpenSayo.spec
+Build: OpenSayo/BUILD_WINDOWS_EXE.bat
+Platform: Windows, Python 3.12 (with py launcher).
+The script installs PyInstaller, hidapi and Pillow via pip; versions are not pinned, so IT should review and approve dependency versions/sources.
+The expected built output is `OpenSayo/dist/OpenSayo/OpenSayo.exe` with accompanying `_internal` files. The entire `dist/OpenSayo` directory must be deployed intact.
+The optional top-level PACKAGE_IT_REVIEW_WINDOWS.bat copies that built output into a separate ZIP with source and IT documentation.
+
+**This input source kit contains no compiled Windows EXE.** The compiled Windows ZIP cannot be validated until run on a Windows computer. Do not claim a prebuilt/IT-approved Windows binary based on source tests.

@@ -1,57 +1,53 @@
-<p align="center"><img src="OpenSayo/assets/OpenSayo_Banner.jpg" alt="OpenSayo — Offline Programmable Keypad Macro Editor" width="100%"></p>
+# OpenSayo v1.15
 
-<h1 align="center">OpenSayo v1.15 — Offline Programmable Keypad Macro Editor</h1>
+![OpenSayo banner](OpenSayo/assets/OpenSayo_Banner.jpg)
 
-<p align="center">Free • Open Source • Offline • Windows</p>
+## Application preview
 
-## Application Preview
+![OpenSayo application, Form View, and About window](OpenSayo/assets/OpenSayo_Layered_Preview.png)
 
-<p align="center"><img src="OpenSayo/assets/OpenSayo_Layered_Preview.png" alt="OpenSayo v1.15 editor, fictional equipment service form, and About window" width="100%"></p>
+*Fictional equipment service request demonstration. Variable details remain label-only.*
 
-*The preview uses a fictional equipment service request. Variable information is left for manual entry.*
+# OpenSayo v1.15
 
----
+**OpenSayo v1.15** is an app-wide polish release intended to make OpenSayo more approachable and useful for general users. It is a Windows tool for creating, editing, previewing, and programming macros for supported Sayo keypads.
 
-## About OpenSayo
+## What's included
 
-OpenSayo is an independently developed Windows application for creating, editing, recording, previewing, and programming keyboard macros on supported programmable keypads. It is intended to make repetitive tasks easier for users while keeping their configurations under their control.
+- `OpenSayo/`: complete application source, Windows launch/build scripts, license, support files, sanitised Sayo USB protocol templates, and offline tests.
+- `IT_Review/`: software overview, build and security review, test status, complete window/dialog inventory, staged verification checklist, and source SHA-256 hashes.
 
-OpenSayo operates locally, without requiring a browser-based programming service for supported devices.
+**Source package:** This repository does not contain a prebuilt Windows `.exe`. On Windows, `OpenSayo/BUILD_WINDOWS_EXE.bat` produces the complete `dist\OpenSayo\` runtime folder; `PACKAGE_IT_REVIEW_WINDOWS.bat` can then produce a ZIP including the compiled runtime and IT materials. Review hardware access and privacy requirements before workplace deployment.
 
-## Features
+## Run on Windows
 
-- **Field View:** Build macros from text, dropdowns, dates, navigation, and editable field values. The **Use** checkbox controls whether a field is active or label-only; disabled fields preserve their Tab positions.
-- **Form View and Grid Mode:** Arrange and preview a customized form layout.
-- **Freeform editor:** Edit text runs, navigation, waits, and millisecond timing directly.
-- **Local recorder:** Capture keyboard actions and review them before using them.
-- **Macro Viewer:** Inspect generated text and device instructions.
-- **2-key and 8-key support:** Select script slots, read supported scripts, and program compatible hardware.
-- **Project and definition files:** Save projects and import custom field, grid, and dropdown definitions.
-- **Offline workflow:** Macros stored on compatible hardware can operate without OpenSayo running.
+1. Extract the entire ZIP; never run the `.bat` files directly from inside the archive.
+2. If Python 3.12 is already available, open `OpenSayo/` and double-click `RUN_OPENSAYO.bat`.
+3. To create a standalone executable, double-click `OpenSayo/BUILD_WINDOWS_EXE.bat`. Keep **all files in** `OpenSayo/dist/OpenSayo/` together; launch `OpenSayo.exe` from that folder.
+4. To stage an executable-and-source IT review release archive after building, double-click `PACKAGE_IT_REVIEW_WINDOWS.bat` in the ZIP root.
+5. Review tests are delivered in small interactive chat checklists; the complete IT plan is in `IT_Review/MASTER_VERIFICATION_CHECKLIST.md`. Do not connect or program a device until the later hardware test phase.
 
-## Hardware and safety
+## Configuration
 
-Supported behavior depends on the exact device model and firmware. Verify a macro in a harmless test application before relying on it. Back up device scripts before overwriting them. Never include passwords or private macro content in public bug reports.
+A fresh startup has 25 blank generic fields and a three-column grid. Field count grows with imported definitions. Personal field (`.osfld`), grid (`.oslay`) and dropdown (`.osdrp`) files are loaded **locally** in that order. None of those private files are included in this package. Only **Field View** has a field enable/disable control: uncheck a field's **Use** checkbox to make it label-only. Disabled fields appear as labels in Form View and retain their Tab navigation position. Grid Mode arranges the visual layout.
 
-## Download and installation
+## Device script readback
 
-See the [Releases page](https://github.com/VanGilDev/OpenSayo/releases) after the repository migration for packaged Windows downloads. The source and IT review package includes build instructions for independent compilation.
+On either supported keypad layout, choose the intended key or script slot before loading. A successful read should populate both the editable Field View and the raw Macro Viewer, including supported navigation actions. Original readback timing stays intact until you edit the form; recheck the regenerated macro and byte meter before programming. Unsupported scripts must leave your current editor intact. Recording keys shows the captured keystrokes in the recorder's text area while recording, but only while its own capture box is focused. All physical device writes must be separately confirmed and verified on Windows.
 
-## Documentation and source
+## Public demonstration
 
-The source package, build scripts, Help, and IT review materials are included in this repository. Private field, dropdown, and grid definitions are not part of the public default configuration.
+`OpenSayo/assets/OpenSayo_Generic_Form_Demo.png` is a **synthetic test configuration** shown in the actual application; it is not a screenshot of any external business system or real user information. Varying item details (reference, part/serial number, quantity) are intentionally label-only.
 
-## Issues, suggestions, and contact
+## Safety and support
 
-- [Bug reports and suggestions](https://github.com/VanGilDev/OpenSayo/issues) (after migration)
-- [Discussions](https://github.com/VanGilDev/OpenSayo/discussions) (after migration)
+Use only harmless test records when reviewing macros. IT should approve HID access, dependencies, and any device writes before deployment. The build script currently installs Python packages from PyPI; local IT may need to review and pin those packages. The binary build and physical device validation must be completed on Windows before a production release is considered verified.
 
-## License
+**GitHub:** https://github.com/VanGilDev/OpenSayo
 
-OpenSayo is released under the MIT License. See [LICENSE](LICENSE).
+### v1.15 final Windows reviewer checkpoint
 
----
-
-**OpenSayo — Program your keypad, not your patience.** 🐾
-
-*OpenSayo is an independent personal project. It is not officially affiliated with or endorsed by the creators or manufacturers of supported devices or other systems it may work alongside.*
+Verify Field View Use toggles correctly and restores the field's saved value.
+Disabled fields appear as labels in Form View and retain their macro Tab
+positions. Check that Field View Use controls the field state, and that layout
+editing and physical device behavior still work normally.

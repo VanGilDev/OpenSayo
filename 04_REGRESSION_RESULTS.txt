@@ -1,0 +1,28 @@
+OpenSayo v1.15 — Verification summary
+
+OpenSayo v1.15 is an app-wide polish release for general users.
+
+RECENT WINDOWS REVIEWER RESULTS (user-reported, not an independent certification)
+- Application startup, Help, About, Settings and repeated-window behavior passed in Batch 01.
+- Macro editing, text runs, Freeform timing, saved projects and script import/export passed.
+- Script readback, Field View and Macro Viewer synchronization, and byte metering passed on tested keypads.
+- Private definition restoration and form customization passed with the reviewer's local files (not bundled).
+- Eight device backup, connect, write/readback, persistence and error-protection tests passed in Batch 08.
+- Latest interface batch: 7 of 8 tests passed. The Help wording correction has passed offline/simulated checks and still requires user Windows retest.
+
+OFFLINE/SIMULATED RESULTS
+- Generic default 25-field form, 69/300/500-field normalization, label-only and Tab alignment.
+- Two-key and eight-key macro decoding, safe mock read/write paths and slot selection.
+- Sanitized Sayo-only USB templates: 443 reports and representative byte comparisons.
+- Recorder live display; Freeform timing controls; project load/save; friendly unsupported-format warning.
+- Persistent secondary windows open once, raise existing instances and can close/reopen in simulation.
+
+MANDATORY RELEASE GATES STILL OUTSTANDING
+- Test this exact candidate and corrected Help on Windows.
+- Build OpenSayo.exe on Windows and independently inspect the FULL executable directory.
+- Complete the full window and popup inventory, including any action that spawns duplicate windows.
+- Approve the generic demonstration screenshot and complete source/documentation disclosure audit.
+- Record explicit reviewer and IT approval before publication.
+
+All automated HID tests here use simulated devices; they do not certify this new Windows build.
+The user's earlier hardware results remain valid observations for the tested versions, not an automatic sign-off for any rebuilt executable.
