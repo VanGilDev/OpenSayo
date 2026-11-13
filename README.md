@@ -8,7 +8,6 @@
 
 *Fictional equipment service request demonstration. Variable details remain label-only.*
 
-# OpenSayo v1.15
 
 **OpenSayo v1.15** is an app-wide polish release intended to make OpenSayo more approachable and useful for general users. It is a Windows tool for creating, editing, previewing, and programming macros for supported Sayo keypads.
 
