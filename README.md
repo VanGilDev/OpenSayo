@@ -1,3 +1,13 @@
+### A Note Regarding Recent Changes
+
+Due to certain considerations, the default templates and layouts in OpenSayo have been adjusted to provide a more neutral, general-purpose starting point.
+
+These changes are purely presentational. All existing functionality remains intact, and OpenSayo continues to support the same features and capabilities as previous versions. **Custom templates and layouts can still be created and applied, allowing users to tailor OpenSayo to their individual needs, workflows, and practical applications.**
+
+For reference and preservation purposes, the original version, including its source code and development history, has been retained in a private archive. Access may be arranged in person with certain authorized parties upon request.
+
+---
+
 <p align="center">
   <img src="OpenSayo_Banner.jpg" alt="OpenSayo — Offline Programmable Keypad Macro Editor" width="100%">
 </p>
